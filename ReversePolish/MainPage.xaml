@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"     xmlns:home="clr-namespace:ReversePolish"
+    xmlns:resources="clr-namespace:ReversePolish.Resources"
+    x:DataType="home:MainPageViewModel"
+             x:Class="ReversePolish.MainPage">
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Entry Placeholder="{x:Static resources:LocalizedStrings.Enter_Formula_to_convert}" Text="{Binding Formula}" />
+
+            <Button Command="{Binding ConvertToReversePolishTapped}" Text="{x:Static resources:LocalizedStrings.Convert}" />
+
+            <Label IsVisible="{Binding ResultReversePolishText, Converter={StaticResource StringIsNotNullOrEmptyConverter}}" Text="{Binding ResultReversePolishText}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
