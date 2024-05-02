@@ -88,7 +88,7 @@ namespace ReversePolish.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No matching left parenthesis. Please fix and try again..
+        ///   Looks up a localized string similar to No matching left parenthesis, please fix and try again..
         /// </summary>
         internal static string No_matching_left_parenthesis_please_fix_and_try_again {
             get {
@@ -97,7 +97,7 @@ namespace ReversePolish.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to No matching right parenthesis. Please fix and try again..
+        ///   Looks up a localized string similar to No matching right parenthesis, please fix and try again..
         /// </summary>
         internal static string No_matching_right_parenthesis_please_fix_and_try_again {
             get {
@@ -115,7 +115,7 @@ namespace ReversePolish.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Result {0}.
+        ///   Looks up a localized string similar to Result: {0}.
         /// </summary>
         internal static string Result_PARM {
             get {
@@ -151,7 +151,7 @@ namespace ReversePolish.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Unknown Symbol {0}. Please Remove..
+        ///   Looks up a localized string similar to Unknown Symbol {0}, Please Remove..
         /// </summary>
         internal static string Unknown_Symbol_PARAM_Please_Remove {
             get {
@@ -160,7 +160,7 @@ namespace ReversePolish.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to What you have entered is invalid. Please try again..
+        ///   Looks up a localized string similar to What you have entered is invalid, Please try again..
         /// </summary>
         internal static string What_you_have_entered_is_invalid_please_try_again {
             get {

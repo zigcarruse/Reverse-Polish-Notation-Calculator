@@ -127,16 +127,16 @@
     <value>Invalid Formula</value>
   </data>
   <data name="No_matching_left_parenthesis_please_fix_and_try_again" xml:space="preserve">
-    <value>No matching left parenthesis. Please fix and try again.</value>
+    <value>No matching left parenthesis, please fix and try again.</value>
   </data>
   <data name="No_matching_right_parenthesis_please_fix_and_try_again" xml:space="preserve">
-    <value>No matching right parenthesis. Please fix and try again.</value>
+    <value>No matching right parenthesis, please fix and try again.</value>
   </data>
   <data name="Okay" xml:space="preserve">
     <value>Okay</value>
   </data>
   <data name="Result_PARM" xml:space="preserve">
-    <value>Result {0}</value>
+    <value>Result: {0}</value>
   </data>
   <data name="Something_went_wrong" xml:space="preserve">
     <value>Something went wrong</value>
@@ -148,9 +148,9 @@
     <value>Syntax Error</value>
   </data>
   <data name="Unknown_Symbol_PARAM_Please_Remove" xml:space="preserve">
-    <value>Unknown Symbol {0}. Please Remove.</value>
+    <value>Unknown Symbol {0}, Please Remove.</value>
   </data>
   <data name="What_you_have_entered_is_invalid_please_try_again" xml:space="preserve">
-    <value>What you have entered is invalid. Please try again.</value>
+    <value>What you have entered is invalid, Please try again.</value>
   </data>
 </root>
