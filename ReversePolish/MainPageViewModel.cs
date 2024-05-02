@@ -1,4 +1,7 @@
-﻿using System.Windows.Input;
+﻿using Core.Exceptions;
+using Core.Services;
+using ReversePolish.Resources;
+using System.Windows.Input;
 
 namespace ReversePolish
 {

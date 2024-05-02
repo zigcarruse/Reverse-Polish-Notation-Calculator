@@ -59,5 +59,113 @@ namespace ReversePolish.Resources {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convert.
+        /// </summary>
+        internal static string Convert {
+            get {
+                return ResourceManager.GetString("Convert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter Formula to convert:.
+        /// </summary>
+        internal static string Enter_Formula_to_convert {
+            get {
+                return ResourceManager.GetString("Enter_Formula_to_convert", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Formula.
+        /// </summary>
+        internal static string Invalid_Formula {
+            get {
+                return ResourceManager.GetString("Invalid_Formula", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No matching left parenthesis. Please fix and try again..
+        /// </summary>
+        internal static string No_matching_left_parenthesis_please_fix_and_try_again {
+            get {
+                return ResourceManager.GetString("No_matching_left_parenthesis_please_fix_and_try_again", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No matching right parenthesis. Please fix and try again..
+        /// </summary>
+        internal static string No_matching_right_parenthesis_please_fix_and_try_again {
+            get {
+                return ResourceManager.GetString("No_matching_right_parenthesis_please_fix_and_try_again", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Okay.
+        /// </summary>
+        internal static string Okay {
+            get {
+                return ResourceManager.GetString("Okay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result {0}.
+        /// </summary>
+        internal static string Result_PARM {
+            get {
+                return ResourceManager.GetString("Result_PARM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Something went wrong.
+        /// </summary>
+        internal static string Something_went_wrong {
+            get {
+                return ResourceManager.GetString("Something_went_wrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Something went wrong {0}.
+        /// </summary>
+        internal static string Something_went_wrong_PARAM {
+            get {
+                return ResourceManager.GetString("Something_went_wrong_PARAM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Syntax Error.
+        /// </summary>
+        internal static string Syntax_Error {
+            get {
+                return ResourceManager.GetString("Syntax_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown Symbol {0}. Please Remove..
+        /// </summary>
+        internal static string Unknown_Symbol_PARAM_Please_Remove {
+            get {
+                return ResourceManager.GetString("Unknown_Symbol_PARAM_Please_Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What you have entered is invalid. Please try again..
+        /// </summary>
+        internal static string What_you_have_entered_is_invalid_please_try_again {
+            get {
+                return ResourceManager.GetString("What_you_have_entered_is_invalid_please_try_again", resourceCulture);
+            }
+        }
     }
 }
