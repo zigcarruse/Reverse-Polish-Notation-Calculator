@@ -1,18 +1,17 @@
-﻿using Core.Exceptions;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using Core.Exceptions;
 using Core.Services;
 using ReversePolish.Resources;
-using System.Windows.Input;
 
 namespace ReversePolish
 {
-    public partial class MainPageViewModel : BindableObject
+    public partial class MainPageViewModel : ObservableObject
     {
-        public string Formula { get; set; }
-        public string ResultReversePolishText { get; set; }
-        public ICommand ConvertToReversePolishTapped => new Command(async () =>
-        {
-            await ConvertToReversePolishTappedCommand();
-        });
+        [ObservableProperty]
+        private string _formula = string.Empty;
+        [ObservableProperty]
+        private string _resultReversePolishText = string.Empty;
 
         private readonly IPlatformUtil _platformUtil;
         private readonly IReversePolishService _reversePolishService;
@@ -25,12 +24,12 @@ namespace ReversePolish
             _reversePolishService = reversePolishService;
         }
 
-        private async Task ConvertToReversePolishTappedCommand()
+        [RelayCommand]
+        private async Task ConvertToReversePolish()
         {
             try
             {
                 ResultReversePolishText = string.Format(LocalizedStrings.Result_PARM, _reversePolishService.ConvertFormulaIntoReversePolish(Formula));
-                OnPropertyChanged(nameof(ResultReversePolishText));
             }
             catch (NoMatchingLeftParenthesisException)
             {

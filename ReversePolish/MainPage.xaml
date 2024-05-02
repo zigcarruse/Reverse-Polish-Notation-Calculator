@@ -10,7 +10,7 @@
         <VerticalStackLayout Padding="30,0" Spacing="25">
             <Entry Placeholder="{x:Static resources:LocalizedStrings.Enter_Formula_to_convert}" Text="{Binding Formula}" />
 
-            <Button Command="{Binding ConvertToReversePolishTapped}" Text="{x:Static resources:LocalizedStrings.Convert}" />
+            <Button Command="{Binding ConvertToReversePolishCommand}" Text="{x:Static resources:LocalizedStrings.Convert}" />
 
             <Label IsVisible="{Binding ResultReversePolishText, Converter={StaticResource StringIsNotNullOrEmptyConverter}}" Text="{Binding ResultReversePolishText}" />
         </VerticalStackLayout>

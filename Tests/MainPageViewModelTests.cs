@@ -25,7 +25,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "1 + 2 )";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         _mockPlatformUtil.Verify(x =>
             x.ShowDisplayAlert("Syntax Error", "No matching left parenthesis, please fix and try again.", "Okay"),
@@ -42,7 +42,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "1 + 2 ( 2 + 3";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         _mockPlatformUtil.Verify(x =>
             x.ShowDisplayAlert("Syntax Error", "No matching right parenthesis, please fix and try again.", "Okay"),
@@ -61,7 +61,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "1 + a";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         _mockPlatformUtil.Verify(x =>
             x.ShowDisplayAlert("Syntax Error", "Unknown Symbol a, Please Remove.", "Okay"),
@@ -77,7 +77,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "      ";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         _mockPlatformUtil.Verify(x =>
             x.ShowDisplayAlert("Invalid Formula", "What you have entered is invalid, Please try again.", "Okay"),
@@ -93,7 +93,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "      ";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         _mockPlatformUtil.Verify(x =>
             x.ShowDisplayAlert("Something went wrong", It.IsAny<string>(), "Okay"),
@@ -109,7 +109,7 @@ public class MainPageViewModelTests
         MainPageViewModel viewModel = CreateMainPageViewModel();
         viewModel.Formula = "1 + 2";
 
-        viewModel.ConvertToReversePolishTapped.Execute(null);
+        viewModel.ConvertToReversePolishCommand.Execute(null);
 
         Assert.True(viewModel.ResultReversePolishText.Equals("Result: 1 2 +"), "Should show correct formula");
     }
